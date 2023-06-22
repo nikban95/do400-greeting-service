@@ -24,7 +24,7 @@ pipeline{
         stage('Deploy') {
 		steps {
 		sh '''
-		oc project wvqpdj-greetings
+		oc project wvqpdj-jenkins
 		oc start-build greeting-service --follow --wait
 		'''
 		}
